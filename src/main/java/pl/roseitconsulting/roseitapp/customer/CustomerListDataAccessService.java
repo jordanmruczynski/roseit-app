@@ -29,7 +29,7 @@ public class CustomerListDataAccessService implements CustomerDao {
     }
 
     @Override
-    public Optional<Customer> selectAllCustomersById(Integer id) {
+    public Optional<Customer> selectCustomerById(Integer id) {
         return customers.stream()
                 .filter(c -> c.getId().equals(id))
                 .findFirst();
