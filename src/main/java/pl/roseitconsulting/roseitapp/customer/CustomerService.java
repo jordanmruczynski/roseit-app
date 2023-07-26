@@ -21,7 +21,7 @@ public class CustomerService {
     }
 
     public Customer getCustomer(Integer id) {
-        return customerDao.selectAllCustomersById(id)
+        return customerDao.selectCustomerById(id)
                 .orElseThrow(() -> new ResourceNotFoundException(
                         String.format("Customer with id %s does not exist", id)
                 ));

@@ -25,7 +25,7 @@ public class CustomerJDBCDataAccessService implements CustomerDao {
     }
 
     @Override
-    public Optional<Customer> selectAllCustomersById(Integer id) {
+    public Optional<Customer> selectCustomerById(Integer id) {
         var sql = String.format("SELECT * FROM %s WHERE id = ?", TABLE_NAME);
         return jdbcTemplate.query(sql, customerRowMapper, id)
                 .stream()
