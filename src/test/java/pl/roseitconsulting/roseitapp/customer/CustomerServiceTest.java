@@ -107,7 +107,7 @@ class CustomerServiceTest {
         // Given
         int id = 1;
 
-        when(customerDao.isIdTaken(id)).thenReturn(false);
+        when(customerDao.isIdTaken(id)).thenReturn(true);
         // When
         underTest.deleteCustomer(id);
         // Then
@@ -119,7 +119,7 @@ class CustomerServiceTest {
         // Given
         int id = 1;
 
-        when(customerDao.isIdTaken(id)).thenReturn(true);
+        when(customerDao.isIdTaken(id)).thenReturn(false);
         // When
         assertThatThrownBy(() -> underTest.deleteCustomer(id))
                 .isInstanceOf(DuplicateResourceException.class)
