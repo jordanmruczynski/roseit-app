@@ -43,7 +43,7 @@ public class CustomerService {
     }
 
     public void deleteCustomer(Integer id) {
-        if (customerDao.isIdTaken(id)) {
+        if (!customerDao.isIdTaken(id)) {
             throw new DuplicateResourceException("Id already taken");
         }
         customerDao.deleteCustomerById(id);
