@@ -13,6 +13,18 @@ services:
     networks:
       - postgres
     restart: unless-stopped
+  roseitapp:
+    container_name: roseitapp
+    image: jordanmruczynski/roseit-app
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:postgresql://postgres:5432/customer
+    ports:
+      - "8090:80"
+    networks:
+      - postgres
+    depends_on:
+      - postgres
+    restart: unless-stopped
 
 networks:
   postgres:

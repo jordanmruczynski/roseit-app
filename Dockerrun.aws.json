@@ -1,0 +1,23 @@
+{
+  "AWSEBDockerrunVersion": 2,
+  "containerDefinitions": [
+    {
+      "name": "roseit-app",
+      "image": "jordanmruczynski/roseit-app:latest",
+      "essential": true,
+      "memory": 512,
+      "portMappings": [
+        {
+          "hostPort": 80,
+          "containerPort": 80
+        }
+      ],
+      "environment": [
+        {
+          "name": "SPRING_DATASOURCE_URL",
+          "value": "jdbc:postgresql://awseb-e-y9a5qzwcxh-stack-awsebrdsdatabase-ywpxuxk2yfzr.cesmudhdriw8.eu-central-1.rds.amazonaws.com:5432/customer"
+        }
+      ]
+    }
+  ]
+}
