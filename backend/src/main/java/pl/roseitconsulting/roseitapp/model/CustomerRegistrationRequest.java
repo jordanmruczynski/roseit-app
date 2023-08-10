@@ -1,4 +1,4 @@
-package pl.roseitconsulting.roseitapp.customer;
+package pl.roseitconsulting.roseitapp.model;
 
 public record CustomerRegistrationRequest(
         String name,

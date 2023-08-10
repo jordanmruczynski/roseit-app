@@ -1,9 +1,13 @@
-package pl.roseitconsulting.roseitapp.customer;
+package pl.roseitconsulting.roseitapp.services;
 
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;
+import pl.roseitconsulting.roseitapp.model.CustomerRegistrationRequest;
+import pl.roseitconsulting.roseitapp.model.CustomerUpdateRequest;
+import pl.roseitconsulting.roseitapp.dao.CustomerDao;
 import pl.roseitconsulting.roseitapp.exception.DuplicateResourceException;
 import pl.roseitconsulting.roseitapp.exception.ResourceNotFoundException;
+import pl.roseitconsulting.roseitapp.model.Customer;
 
 import java.util.List;
 

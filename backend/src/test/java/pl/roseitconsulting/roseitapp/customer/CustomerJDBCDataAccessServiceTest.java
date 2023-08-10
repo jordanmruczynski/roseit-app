@@ -1,13 +1,14 @@
 package pl.roseitconsulting.roseitapp.customer;
 
-import org.checkerframework.checker.nullness.Opt;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import pl.roseitconsulting.roseitapp.AbstractTestcontainers;
+import pl.roseitconsulting.roseitapp.dao.CustomerJDBCDataAccessService;
+import pl.roseitconsulting.roseitapp.dao.CustomerRowMapper;
+import pl.roseitconsulting.roseitapp.model.Customer;
 
 import java.util.Optional;
 
-import static org.assertj.core.api.Assertions.as;
 import static org.assertj.core.api.Assertions.assertThat;
 
 class CustomerJDBCDataAccessServiceTest extends AbstractTestcontainers {

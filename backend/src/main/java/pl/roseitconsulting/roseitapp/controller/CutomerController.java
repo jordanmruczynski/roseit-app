@@ -1,6 +1,10 @@
-package pl.roseitconsulting.roseitapp.customer;
+package pl.roseitconsulting.roseitapp.controller;
 
 import org.springframework.web.bind.annotation.*;
+import pl.roseitconsulting.roseitapp.model.CustomerRegistrationRequest;
+import pl.roseitconsulting.roseitapp.services.CustomerService;
+import pl.roseitconsulting.roseitapp.model.CustomerUpdateRequest;
+import pl.roseitconsulting.roseitapp.model.Customer;
 
 import java.util.List;
 

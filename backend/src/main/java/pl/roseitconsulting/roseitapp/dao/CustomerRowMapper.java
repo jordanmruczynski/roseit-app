@@ -1,7 +1,8 @@
-package pl.roseitconsulting.roseitapp.customer;
+package pl.roseitconsulting.roseitapp.dao;
 
 import org.springframework.jdbc.core.RowMapper;
 import org.springframework.stereotype.Component;
+import pl.roseitconsulting.roseitapp.model.Customer;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;

@@ -5,10 +5,9 @@ import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
-import pl.roseitconsulting.roseitapp.customer.Customer;
-import pl.roseitconsulting.roseitapp.customer.CustomerRepository;
+import pl.roseitconsulting.roseitapp.model.Customer;
+import pl.roseitconsulting.roseitapp.repository.CustomerRepository;
 
-import java.util.List;
 import java.util.Random;
 import java.util.concurrent.ThreadLocalRandom;
 
