@@ -1,4 +1,6 @@
-package pl.roseitconsulting.roseitapp.customer;
+package pl.roseitconsulting.roseitapp.dao;
+
+import pl.roseitconsulting.roseitapp.model.Customer;
 
 import java.util.List;
 import java.util.Optional;

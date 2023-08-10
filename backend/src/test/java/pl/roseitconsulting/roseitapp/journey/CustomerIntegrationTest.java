@@ -7,9 +7,9 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.core.ParameterizedTypeReference;
 import org.springframework.http.MediaType;
 import org.springframework.test.web.reactive.server.WebTestClient;
-import pl.roseitconsulting.roseitapp.customer.Customer;
-import pl.roseitconsulting.roseitapp.customer.CustomerRegistrationRequest;
-import pl.roseitconsulting.roseitapp.customer.CustomerUpdateRequest;
+import pl.roseitconsulting.roseitapp.model.Customer;
+import pl.roseitconsulting.roseitapp.model.CustomerRegistrationRequest;
+import pl.roseitconsulting.roseitapp.model.CustomerUpdateRequest;
 import reactor.core.publisher.Mono;
 
 import java.util.List;

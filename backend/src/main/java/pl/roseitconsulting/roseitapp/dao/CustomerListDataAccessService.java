@@ -1,6 +1,7 @@
-package pl.roseitconsulting.roseitapp.customer;
+package pl.roseitconsulting.roseitapp.dao;
 
 import org.springframework.stereotype.Repository;
+import pl.roseitconsulting.roseitapp.model.Customer;
 
 import java.util.ArrayList;
 import java.util.List;

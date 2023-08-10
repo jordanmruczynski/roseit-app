@@ -1,7 +1,8 @@
-package pl.roseitconsulting.roseitapp.customer;
+package pl.roseitconsulting.roseitapp.dao;
 
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Repository;
+import pl.roseitconsulting.roseitapp.model.Customer;
 
 import java.util.List;
 import java.util.Optional;
