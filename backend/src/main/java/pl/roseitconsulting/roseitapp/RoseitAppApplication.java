@@ -20,7 +20,7 @@ public class RoseitAppApplication {
     @Bean
     CommandLineRunner runner(CustomerRepository customerRepository) {
         return args -> {
-            System.out.println("Hello world!");
+            System.out.println("Hello world!!!");
             Faker faker = new Faker();
             Random random = ThreadLocalRandom.current();
             Customer customer = new Customer(
